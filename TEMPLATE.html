@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RTL Resume Review — Sample Report</title>
+<style>
+:root{
+  --bg:#fff; --bg2:#f4f4f8; --accent:#6c63ff; --accent2:#5b52e0;
+  --text:#111118; --muted:#5f5f7a; --border:#e4e4f0;
+  --red:#dc2626; --redbg:#fef2f2; --amber:#d97706; --amberbg:#fffbeb;
+  --green:#059669; --greenbg:#ecfdf5;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.65;font-size:14px;}
+.page{max-width:840px;margin:0 auto;padding:2.5rem 2.25rem 3rem;}
+
+.masthead{border-bottom:3px solid var(--accent);padding-bottom:1.1rem;margin-bottom:1.6rem;}
+.masthead .kicker{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:.35rem;}
+.masthead h1{font-size:1.55rem;font-weight:800;letter-spacing:-.4px;line-height:1.2;}
+.masthead .byline{font-size:.85rem;color:var(--muted);margin-top:.4rem;}
+
+/* FUNNEL */
+.funnel{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap;}
+.stage{
+  flex:1 1 180px;border:1px solid var(--border);border-radius:9px;
+  padding:.7rem .85rem;background:var(--bg2);position:relative;
+}
+.stage.dead{background:var(--redbg);border-color:#fecaca;}
+.stage.wounded{background:var(--amberbg);border-color:#fde68a;}
+.stage.ok{background:var(--greenbg);border-color:#a7f3d0;}
+.stage .n{font-size:.62rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);}
+.stage .who{font-weight:700;font-size:.9rem;margin:.15rem 0 .2rem;}
+.stage .verdict{font-size:.75rem;font-weight:700;}
+.dead .verdict{color:var(--red);}
+.wounded .verdict{color:var(--amber);}
+.ok .verdict{color:var(--green);}
+
+.verdict-box{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--red);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1.9rem;}
+.verdict-box .tier{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--red);margin-bottom:.4rem;}
+.verdict-box .headline{font-size:1.06rem;font-weight:700;margin-bottom:.5rem;line-height:1.4;}
+.verdict-box p{font-size:.9rem;color:var(--muted);}
+
+.section{margin-bottom:2rem;break-inside:avoid;}
+.section-head{display:flex;align-items:baseline;gap:.7rem;border-bottom:1px solid var(--border);padding-bottom:.45rem;margin-bottom:.5rem;}
+.section-num{font-size:.7rem;font-weight:800;color:#fff;background:var(--accent2);width:20px;height:20px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}
+.section-head h2{font-size:1.06rem;font-weight:800;letter-spacing:-.2px;}
+.section-head .sub{font-size:.76rem;color:var(--muted);margin-left:auto;font-weight:500;}
+.layer-note{font-size:.83rem;color:var(--muted);margin-bottom:.9rem;font-style:italic;}
+
+.finding{border:1px solid var(--border);border-radius:9px;padding:.95rem 1.1rem;margin-bottom:.8rem;break-inside:avoid;}
+.finding.flag{background:var(--redbg);border-color:#fecaca;}
+.finding.probe{background:var(--amberbg);border-color:#fde68a;}
+.finding.flair{background:var(--greenbg);border-color:#a7f3d0;}
+.finding-head{display:flex;align-items:center;gap:.55rem;margin-bottom:.5rem;}
+.chip{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.9px;padding:.16rem .5rem;border-radius:100px;flex-shrink:0;}
+.flag .chip{background:var(--red);color:#fff;}
+.probe .chip{background:var(--amber);color:#fff;}
+.flair .chip{background:var(--green);color:#fff;}
+.finding-title{font-weight:700;font-size:.93rem;line-height:1.35;}
+.quote{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.76rem;background:rgba(17,17,24,.05);border-left:2px solid var(--muted);padding:.45rem .7rem;margin:.5rem 0;border-radius:0 4px 4px 0;white-space:pre-wrap;word-break:break-word;}
+.finding p{font-size:.87rem;color:var(--muted);margin-bottom:.45rem;}
+.finding p:last-child{margin-bottom:0;}
+.label{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.9px;color:var(--text);}
+.ask{margin-top:.55rem;padding-top:.55rem;border-top:1px dashed rgba(17,17,24,.14);font-size:.87rem;color:var(--text);font-style:italic;}
+.fix{margin-top:.5rem;font-size:.85rem;color:var(--text);background:rgba(255,255,255,.65);border-radius:6px;padding:.45rem .6rem;}
+
+.cta{margin-top:2.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem 1.6rem;text-align:center;break-inside:avoid;}
+.cta h3{font-size:1.03rem;font-weight:800;margin-bottom:.5rem;}
+.cta p{font-size:.88rem;color:var(--muted);margin-bottom:1rem;max-width:54ch;margin-left:auto;margin-right:auto;}
+.cta a.btn{display:inline-block;background:var(--accent2);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-size:.88rem;font-weight:600;text-decoration:none;}
+.cta .fine{font-size:.75rem;color:var(--muted);margin-top:.9rem;}
+.cta .fine a{color:var(--accent2);}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+
+@media print{
+  body{font-size:11.5pt;}
+  .page{max-width:none;padding:0;}
+  .no-print{display:none !important;}
+  .finding,.section,.cta,.funnel{break-inside:avoid;}
+  a{text-decoration:none;color:var(--accent2);}
+  .cta a.btn{border:1px solid var(--accent2);}
+}
+.print-hint{background:#111118;color:#fff;padding:.7rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:1.5rem;text-align:center;}
+@page{margin:14mm;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="print-hint no-print">Press <strong>Ctrl/Cmd + P</strong> → <strong>Save as PDF</strong>. No install, no LaTeX.</div>
+
+  <div class="masthead">
+    <div class="kicker">RTL Resume Review</div>
+    <h1>Your resume is screened three times. Here is where yours stops.</h1>
+    <div class="byline">Reviewed against the open RTL rubric · hwthinking.in</div>
+  </div>
+
+  <div class="funnel">
+    <div class="stage dead">
+      <div class="n">Layer 1</div>
+      <div class="who">ATS parser</div>
+      <div class="verdict">✕ Stops here</div>
+    </div>
+    <div class="stage wounded">
+      <div class="n">Layer 2</div>
+      <div class="who">Recruiter · 30 sec</div>
+      <div class="verdict">⚠ Would struggle</div>
+    </div>
+    <div class="stage ok">
+      <div class="n">Layer 3</div>
+      <div class="who">Hiring manager</div>
+      <div class="verdict">✓ Would likely pass</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FILL FROM HERE. Keep the classes; replace all copy.
+       Blocks available:
+         .verdict-box            one, after the funnel
+         .section + .section-head + .layer-note   one per layer
+         .finding.flag           red    - costs them the screen
+         .finding.probe          amber  - a panel will push here
+         .finding.flair          green  - strength; surface it
+         .quote                  their actual line, verbatim
+         .ask                    the probing question
+         .fix                    the concrete remediation
+       ORDER: confidentiality (if any) -> buried asset (if any)
+              -> layer 1 -> layer 2 -> layer 3
+       ============================================================ -->
+
+  <div class="verdict-box">
+    <div class="tier">Verdict · REPLACE</div>
+    <div class="headline">REPLACE — one sentence, the outcome</div>
+    <p>REPLACE — two or three sentences. Name what is strong before what is broken.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">1</span>
+      <h2>ATS parser</h2>
+      <span class="sub">software · reads tokens, dates, sections</span>
+    </div>
+    <p class="layer-note">It cannot judge merit. It can only fail to read you — and then nobody else gets the chance.</p>
+
+    <div class="finding flag">
+      <div class="finding-head"><span class="chip">Flag</span><span class="finding-title">REPLACE</span></div>
+      <div class="quote">REPLACE — their actual text, verbatim</div>
+      <p><span class="label">Why it is fatal here:</span> REPLACE</p>
+      <div class="fix"><strong>Fix:</strong> REPLACE</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">2</span>
+      <h2>Recruiter</h2>
+      <span class="sub">non-technical · roughly 30 seconds</span>
+    </div>
+    <p class="layer-note">They cannot evaluate a line of your RTL work. They are matching you to a requisition: years, title, employer, keywords.</p>
+
+    <div class="finding probe">
+      <div class="finding-head"><span class="chip">Probe</span><span class="finding-title">REPLACE</span></div>
+      <p><span class="label">What it says:</span> REPLACE</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">3</span>
+      <h2>Technical hiring manager</h2>
+      <span class="sub">domain expert · the reader you want</span>
+    </div>
+    <p class="layer-note">REPLACE — one line on how this layer went.</p>
+
+    <div class="finding flair">
+      <div class="finding-head"><span class="chip">Strength</span><span class="finding-title">REPLACE</span></div>
+      <p><span class="label">What a panel reads:</span> REPLACE</p>
+    </div>
+
+    <div class="finding probe">
+      <div class="finding-head"><span class="chip">Probe</span><span class="finding-title">REPLACE</span></div>
+      <div class="quote">REPLACE</div>
+      <p><span class="label">What a panel reads:</span> REPLACE</p>
+      <div class="ask">"REPLACE — the question a panel will actually ask"</div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>REPLACE — the verdict headline, matched to the tier</h3>
+    <p>The fixes above are yours to make, free. What this review cannot tell you is whether your answers to those questions hold up when a panel pushes back, or whether you are aiming at the right roles at all. That part needs a person.</p>
+    <a class="btn" href="https://hwthinking.in/book.html?utm_source=resume-skill&amp;utm_medium=report&amp;utm_campaign=rtl_review">Book a session →</a>
+    <div class="fine">Reviewed against an open rubric — read or fork it at <a href="https://github.com/iam-palash">github.com/iam-palash</a></div>
+  </div>
+
+  <footer>
+    <span>RTL Resume Reviewer · open rubric, MIT licensed</span>
+    <span>hwthinking.in</span>
+  </footer>
+
+</div>
+</body>
+</html>
