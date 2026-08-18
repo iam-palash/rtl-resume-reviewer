@@ -16,12 +16,14 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 
 .masthead{border-bottom:3px solid var(--accent);padding-bottom:1.1rem;margin-bottom:1.6rem;}
 .masthead .kicker{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:.35rem;}
-.masthead h1{font-size:2rem;font-weight:800;letter-spacing:-.6px;line-height:1.18;}
-.masthead h1 .x3{color:var(--accent);font-size:1.25em;letter-spacing:-1px;}
+.masthead h1{font-size:1.55rem;font-weight:800;letter-spacing:-.4px;line-height:1.2;}
 .masthead .byline{font-size:.85rem;color:var(--muted);margin-top:.4rem;}
-.brandbar{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.25rem 1rem;font-size:.74rem;color:var(--muted);padding-bottom:.55rem;border-bottom:1px solid var(--border);margin-bottom:1.4rem;}
-.brandbar strong{color:var(--text);font-weight:700;}
-.brandbar a{color:var(--accent2);text-decoration:none;font-weight:600;}
+.brandbar{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.2rem 1.5rem;padding-bottom:.6rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem;}
+.bb-primary{font-size:.82rem;color:var(--text);}
+.bb-primary strong{font-weight:800;letter-spacing:.1px;}
+.bb-primary .role{color:var(--muted);}
+.bb-secondary{font-size:.72rem;color:var(--muted);}
+.bb-secondary strong{font-weight:700;color:var(--muted);}
 
 /* SCORECARD */
 .scorecard{border:1px solid var(--border);border-radius:11px;background:var(--bg2);padding:1.1rem 1.2rem;margin-bottom:1.5rem;}
@@ -115,13 +117,13 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
 <div class="page">
 
   <div class="brandbar">
-    <span>Rubric designed by <strong>Palash Khandale</strong> · working RTL engineer &amp; mentor</span>
-    <span>A <strong>Tranquil Light Foundation</strong> mentorship initiative · <a href="https://hwthinking.in">hwthinking.in</a></span>
+    <span class="bb-primary">Rubric by <strong>Palash Khandale</strong> <span class="role">· RTL engineer &amp; mentor</span></span>
+    <span class="bb-secondary">Released free by the <strong>Tranquil Light Foundation</strong></span>
   </div>
 
   <div class="masthead">
     <div class="kicker">RTL Resume Review</div>
-    <h1>Your resume is screened <span class="x3">3&times;</span> — here is where yours stops.</h1>
+    <h1>Your resume is screened 3x. Here is where yours stops.</h1>
     <div class="byline">Reviewed against the open RTL rubric · <a href="https://hwthinking.in">hwthinking.in</a></div>
   </div>
 
@@ -245,7 +247,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
   <div class="print-hint no-print">Keep this review — press <strong>Ctrl/Cmd + P</strong> → <strong>Save as PDF</strong>. Nothing to install.</div>
 
   <footer>
-    <span>Rubric designed by <strong>Palash Khandale</strong> · owned by the <strong>Tranquil Light Foundation</strong>, given free to engineers · MIT licensed</span>
+    <span>Rubric by <strong>Palash Khandale</strong> · released free by the Tranquil Light Foundation · MIT licensed</span>
     <span><a href="https://hwthinking.in">hwthinking.in</a></span>
   </footer>
 
