@@ -68,9 +68,11 @@ Generate a single self-contained HTML file from `TEMPLATE.html` — every style 
 
 **Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is *and* that you have opened it, then mention Cmd/Ctrl+P → Save as PDF as the way to keep or send it.
 
-Order: **brand bar → confidentiality (if any) → buried asset (if any) → funnel strip → scorecard → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+Order: **brand bar → scorecard → confidentiality (if any) → buried asset (if any) → funnel strip → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
 
-The scorecard sits directly under the funnel strip and carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Close it with the re-run line — *"fix what is above and run this review again"* — because a candidate who re-runs is a candidate who edited.
+The scorecard sits **directly under the header**, before anything else. It is the first thing read and it carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Everything below it is the explanation of that number.
+
+Because the score leads, its closing note has to point down the page — name what is holding the number down, then *"fix what is below and run this review again."* When a confidentiality ceiling is capping the score, say so in that note; it is what sends the reader into the urgent block that follows.
 
 **Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
 
