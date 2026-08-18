@@ -10,7 +10,7 @@ It runs on **your** AI subscription. Nothing is uploaded, nothing is stored, and
 
 Keyword checkers are a commodity. What they cannot tell you is what a line actually *signals* to someone who has sat on the other side of the table — that "worked on RTL to GDSII flow" at three years' experience reads as having touched one stage, or that naming your employer's unannounced project codename ends the conversation before anyone reads your bullets.
 
-This rubric encodes that judgment: fifteen years of interview-side pattern recognition from a working silicon engineer, written down as explicit, checkable rules.
+This rubric encodes that judgment — a working RTL engineer's pattern recognition, built from real resumes and real outcomes, written down as explicit, checkable rules.
 
 **It is deliberately open.** Read it, fork it, argue with it. It tells you the questions a panel will ask. It cannot tell you whether your answers survive.
 

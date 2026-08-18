@@ -16,7 +16,8 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 
 .masthead{border-bottom:3px solid var(--accent);padding-bottom:1.1rem;margin-bottom:1.6rem;}
 .masthead .kicker{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:.35rem;}
-.masthead h1{font-size:1.55rem;font-weight:800;letter-spacing:-.4px;line-height:1.2;}
+.masthead h1{font-size:2rem;font-weight:800;letter-spacing:-.6px;line-height:1.18;}
+.masthead h1 .x3{color:var(--accent);font-size:1.25em;letter-spacing:-1px;}
 .masthead .byline{font-size:.85rem;color:var(--muted);margin-top:.4rem;}
 .brandbar{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.25rem 1rem;font-size:.74rem;color:var(--muted);padding-bottom:.55rem;border-bottom:1px solid var(--border);margin-bottom:1.4rem;}
 .brandbar strong{color:var(--text);font-weight:700;}
@@ -74,6 +75,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .cta .fine{font-size:.75rem;color:var(--muted);margin-top:.9rem;}
 .cta .fine a{color:var(--accent2);}
 footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
 
 @media print{
   body{font-size:11.5pt;}
@@ -91,14 +93,14 @@ footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-
 <div class="page">
 
   <div class="brandbar">
-    <span>Rubric designed by <strong>Palash Khandale</strong> · Staff Engineer, 15 years hiring RTL</span>
-    <span>A <strong>Tranquil Light Foundation</strong> mentorship initiative</span>
+    <span>Rubric designed by <strong>Palash Khandale</strong> · working RTL engineer &amp; mentor</span>
+    <span>A <strong>Tranquil Light Foundation</strong> mentorship initiative · <a href="https://hwthinking.in">hwthinking.in</a></span>
   </div>
 
   <div class="masthead">
     <div class="kicker">RTL Resume Review</div>
-    <h1>Your resume is screened three times. Here is where yours stops.</h1>
-    <div class="byline">Reviewed against the open RTL rubric · hwthinking.in</div>
+    <h1>Your resume is screened <span class="x3">3&times;</span> — here is where yours stops.</h1>
+    <div class="byline">Reviewed against the open RTL rubric · <a href="https://hwthinking.in">hwthinking.in</a></div>
   </div>
 
   <div class="funnel">
@@ -202,7 +204,7 @@ footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-
 
   <footer>
     <span>Rubric designed by <strong>Palash Khandale</strong> · owned by the <strong>Tranquil Light Foundation</strong>, given free to engineers · MIT licensed</span>
-    <span>hwthinking.in</span>
+    <span><a href="https://hwthinking.in">hwthinking.in</a></span>
   </footer>
 
 </div>
