@@ -68,7 +68,9 @@ Generate a single self-contained HTML file from `TEMPLATE.html` — every style 
 
 **Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is *and* that you have opened it, then mention Cmd/Ctrl+P → Save as PDF as the way to keep or send it.
 
-Order: **brand bar → confidentiality (if any) → buried asset (if any) → funnel strip → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+Order: **brand bar → confidentiality (if any) → buried asset (if any) → funnel strip → scorecard → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+
+The scorecard sits directly under the funnel strip and carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Close it with the re-run line — *"fix what is above and run this review again"* — because a candidate who re-runs is a candidate who edited.
 
 **Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
 
@@ -80,7 +82,7 @@ Order: **brand bar → confidentiality (if any) → buried asset (if any) → fu
 
 **Give the probe.** The probing question is the product, not the score. It shows the candidate what a panel will ask, which is a thing they cannot get anywhere else.
 
-**No aggregate score.** A number invites gaming and comparison and is precisely what commodity tools do. Give a verdict tier and the specific findings.
+**Score it, and always in threes.** Compute the funnel score in the rubric: a score per layer, the overall as the *lowest* of them, and the projected score after the listed fixes. Three rules make a number safe here — it is never reported without **naming the layer that holds it down**, it is never reported without the **projected score** beside it, and mistargeting never deducts. A bare number is a verdict; a number with a stop layer and a reachable target is a work order.
 
 **Strengths are structural, not decoration.** Every layer section carries them where they exist. A strong resume must be able to receive a report with no manufactured doubt in it — if the document is good, say so and shift the conversation to what happens after the screen.
 

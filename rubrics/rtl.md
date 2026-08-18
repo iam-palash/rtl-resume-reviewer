@@ -22,6 +22,46 @@ Escalation lives in its own field (`Escalates to:`), never inside the weight.
 
 ---
 
+## Scoring — the funnel score
+
+Score **each layer separately**, out of 100. Every layer starts at 100 and loses points for what fires in it:
+
+| Weight | Points |
+|---|---|
+| `reject` | −40 |
+| `reject-contributing` | −12 |
+| `probe` | −5 |
+| `advisory` | −2 |
+| `strength` | +4, capped at +12 per layer |
+
+Clamp each layer to 0–100.
+
+**The overall score is the lowest layer score, never the average.** A resume travels exactly as far as its weakest filter — averaging lets a clean parse hide a dead layer 3, which is the specific lie this rubric exists to stop telling. The layer holding the minimum **is** the stop layer, and it must be named in the report next to the number: *"Stops at layer 2 — recruiter."*
+
+**Confidentiality is a ceiling, not a deduction.** Any unresolved leak caps the overall at **40**, whatever the layers say. It is fatal, invisible to the candidate, and free to fix — so it should dominate the number and then vanish from it entirely on the next run.
+
+**Mistargeting never deducts.** Archetype or discipline mismatch is reported as aim, not quality, and takes no points off. A strong signoff engineer chasing design roles scores as the strong engineer they are, with the mismatch named beside the score. Scoring aim as weakness would reproduce the exact error this rubric was built to correct.
+
+### The projected score
+
+Recompute the whole thing with every `reject`, `reject-contributing` and confidentiality finding resolved — leaving `probe` items in place, because a probe is a question to prepare for, not a defect to erase.
+
+**Cap the projection at 85.** A rewrite that has not been written yet is not evidence, and a tool that promises 95 for an afternoon's editing is lying to keep someone happy. 85 is "gets calls" — the honest ceiling for fixes that are already listed and not yet done.
+
+Report both numbers together: **where they are now, and where the fixes in this report put them.** The gap is the point. A candidate at 34 who can reach 79 by fixing what is already listed will edit the document and run the review again, which is the only way this tool improves anything. Never report the current score alone — a bare number is a verdict, and a verdict is not actionable.
+
+**Band names for the overall score:**
+
+| Score | Band |
+|---|---|
+| 85–100 | Clears all three screens |
+| 70–84 | Gets calls — expect pressure in the room |
+| 50–69 | Stalls at the named layer |
+| 30–49 | Stops at the named layer |
+| 0–29 | Does not survive first contact |
+
+---
+
 ## Gate A · Tenure band — resolve before anything else
 
 Total years of relevant experience determines which entries apply and, for several, **reverses their polarity**. Getting this wrong is the single largest source of wrong advice.

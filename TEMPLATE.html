@@ -23,6 +23,28 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .brandbar strong{color:var(--text);font-weight:700;}
 .brandbar a{color:var(--accent2);text-decoration:none;font-weight:600;}
 
+/* SCORECARD */
+.scorecard{border:1px solid var(--border);border-radius:11px;background:var(--bg2);padding:1.1rem 1.2rem;margin-bottom:1.5rem;}
+.score-row{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;}
+.score-now{display:flex;align-items:baseline;gap:.3rem;}
+.score-now .num{font-size:3.1rem;font-weight:800;line-height:1;letter-spacing:-2px;color:var(--red);}
+.score-now .den{font-size:1rem;font-weight:700;color:var(--muted);}
+.score-meta{flex:1 1 240px;min-width:200px;}
+.score-band{font-weight:800;font-size:.95rem;}
+.score-stop{font-size:.82rem;color:var(--muted);margin-top:.15rem;}
+.score-stop strong{color:var(--red);}
+.score-proj{border-left:2px dashed var(--border);padding-left:1.2rem;text-align:center;}
+.score-proj .num{font-size:2.1rem;font-weight:800;color:var(--green);line-height:1;letter-spacing:-1px;}
+.score-proj .lbl{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-top:.25rem;}
+.score-layers{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;}
+.slay{flex:1 1 140px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;}
+.slay .l{font-size:.62rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);}
+.slay .v{font-size:1.25rem;font-weight:800;line-height:1.2;}
+.slay.min{border-color:var(--red);background:var(--redbg);}
+.slay.min .v{color:var(--red);}
+.score-note{font-size:.78rem;color:var(--muted);margin-top:.9rem;padding-top:.75rem;border-top:1px solid var(--border);}
+.score-note strong{color:var(--text);}
+
 /* FUNNEL */
 .funnel{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap;}
 .stage{
@@ -119,6 +141,26 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
       <div class="who">Hiring manager</div>
       <div class="verdict">✓ Would likely pass</div>
     </div>
+  </div>
+
+  <div class="scorecard">
+    <div class="score-row">
+      <div class="score-now"><span class="num">REPLACE</span><span class="den">/100</span></div>
+      <div class="score-meta">
+        <div class="score-band">REPLACE — band name for this score</div>
+        <div class="score-stop">Stops at <strong>layer REPLACE — REPLACE reader</strong>. Your score is your weakest screen, not your average.</div>
+      </div>
+      <div class="score-proj">
+        <div class="num">REPLACE</div>
+        <div class="lbl">After these fixes</div>
+      </div>
+    </div>
+    <div class="score-layers">
+      <div class="slay"><div class="l">Layer 1 · ATS</div><div class="v">REPLACE</div></div>
+      <div class="slay"><div class="l">Layer 2 · Recruiter</div><div class="v">REPLACE</div></div>
+      <div class="slay min"><div class="l">Layer 3 · Technical</div><div class="v">REPLACE</div></div>
+    </div>
+    <div class="score-note">REPLACE — one line on what is holding the number down, then: <strong>fix what is below and run this review again.</strong></div>
   </div>
 
   <!-- ============================================================
