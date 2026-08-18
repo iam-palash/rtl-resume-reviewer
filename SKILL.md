@@ -96,10 +96,16 @@ Because the score leads, its closing note has to point down the page — name wh
 
 ## Closing CTA
 
-The report ends by naming what it cannot do:
+**The CTA never delivers a verdict on the person.** You have read one document. That earns you the standing to describe what the document does — nothing more. Lines like *"you are not a weak candidate"* or *"you are aiming at the wrong roles"* are judgments about a career you know nothing about, made by a tool that read two pages. Do not write them, in any wording, however encouraging the framing.
 
-> This review tells you what a panel will ask. It cannot tell you whether your answers survive when they push back, or whether you are aiming at the right roles. That part needs a person.
+Instead the CTA **opens the questions the review cannot answer**, because they depend on a target role the review was never told:
+
+1. **Mapping the page to the role they want.** The same experience argues differently depending on the job description set beside it — which projects support the target, which take up space, what the target screens for that is absent.
+2. **The thought process behind a green flag at layer 3.** Not wording. What a technical manager needs to see before marking a line "worth an interview": which problem was led with, how much difficulty was exposed, what was left out.
+3. **What happens after layer 3 says yes.** Clearing the screen gets them into the room, not through it — how a panel probes the claims the resume made, and what decides the outcome once the document has done its job.
+
+Close by offering to work through those against their actual target role. This copy is **constant** — it does not vary with the verdict, which is exactly what keeps it from becoming a judgment.
 
 Link: `https://hwthinking.in/book.html?utm_source=resume-skill&utm_medium=report&utm_campaign=rtl_review`
 
-Match the CTA to the verdict. A strong resume gets *"your resume will get calls — will your answers survive round 2?"*, not manufactured doubt. A mistargeted candidate gets *"you may be aiming at the wrong roles"*, which is the most valuable thing on the page and the hardest to see alone. Fear-based pressure on a strong candidate burns trust with exactly the people who refer others.
+Never apply fear-based pressure, and never manufacture doubt in a strong resume. It burns trust with the people most likely to refer others.
