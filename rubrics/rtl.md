@@ -1,6 +1,6 @@
 # RTL / ASIC / FPGA resume rubric
 
-Encodes the judgment of a working RTL engineer, built from real resumes and real screening outcomes. Applied by `SKILL.md`.
+Encodes the judgment of a working RTL engineer — 10+ years in silicon, 25+ engineers mentored — built from real resumes and real screening outcomes. Applied by `SKILL.md`.
 
 **How to read an entry.** `Signature` is the checkable condition — it must be decidable from any resume, never from a memorised example. `Reads as` is what the reader concludes. `Probe` is the interview question the finding implies. `Weight` and `Layer` drive the report.
 
