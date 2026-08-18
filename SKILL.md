@@ -62,9 +62,15 @@ This converts a rejection into a redirect and it is the one output no keyword to
 
 ### Step 7 — Write the report
 
-Generate a single self-contained HTML file from `TEMPLATE.html`, then tell the user to open it and press Cmd/Ctrl+P to save as PDF. Do not require any install.
+Generate a single self-contained HTML file from `TEMPLATE.html` — every style inline, no external asset, no network call. It must render from a `file://` path with nothing installed and nothing hosted.
 
-Order: **confidentiality (if any) → buried asset (if any) → funnel strip → layer 1 → layer 2 → layer 3 → CTA.**
+**Where to write it:** alongside the resume, named `<resume-filename>-review.html`. Never a temp directory — the user will not find it there.
+
+**Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is *and* that you have opened it, then mention Cmd/Ctrl+P → Save as PDF as the way to keep or send it.
+
+Order: **brand bar → confidentiality (if any) → buried asset (if any) → funnel strip → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+
+**Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
 
 ## Output rules
 

@@ -18,6 +18,9 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .masthead .kicker{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:.35rem;}
 .masthead h1{font-size:1.55rem;font-weight:800;letter-spacing:-.4px;line-height:1.2;}
 .masthead .byline{font-size:.85rem;color:var(--muted);margin-top:.4rem;}
+.brandbar{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.25rem 1rem;font-size:.74rem;color:var(--muted);padding-bottom:.55rem;border-bottom:1px solid var(--border);margin-bottom:1.4rem;}
+.brandbar strong{color:var(--text);font-weight:700;}
+.brandbar a{color:var(--accent2);text-decoration:none;font-weight:600;}
 
 /* FUNNEL */
 .funnel{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap;}
@@ -87,7 +90,10 @@ footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-
 <body>
 <div class="page">
 
-  <div class="print-hint no-print">Press <strong>Ctrl/Cmd + P</strong> → <strong>Save as PDF</strong>. No install, no LaTeX.</div>
+  <div class="brandbar">
+    <span>Rubric designed by <strong>Palash Khandale</strong> · Staff Engineer, 15 years hiring RTL</span>
+    <span>A <strong>Tranquil Light Foundation</strong> mentorship initiative</span>
+  </div>
 
   <div class="masthead">
     <div class="kicker">RTL Resume Review</div>
@@ -192,8 +198,10 @@ footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-
     <div class="fine">Reviewed against an open rubric — read or fork it at <a href="https://github.com/iam-palash">github.com/iam-palash</a></div>
   </div>
 
+  <div class="print-hint no-print">Keep this review — press <strong>Ctrl/Cmd + P</strong> → <strong>Save as PDF</strong>. Nothing to install.</div>
+
   <footer>
-    <span>RTL Resume Reviewer · open rubric, MIT licensed</span>
+    <span>Rubric designed by <strong>Palash Khandale</strong> · owned by the <strong>Tranquil Light Foundation</strong>, given free to engineers · MIT licensed</span>
     <span>hwthinking.in</span>
   </footer>
 
