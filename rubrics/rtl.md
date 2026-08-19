@@ -32,13 +32,28 @@ Score **each layer separately**, out of 100. Every layer starts at 100 and loses
 | `reject-contributing` | −12 |
 | `probe` | −5 |
 | `advisory` | −2 |
-| `strength` | +4, capped at +12 per layer |
+| `strength` | no flat points — it reduces the layer's deduction proportionally, see below |
 
 Clamp each layer to 0–100.
 
+**Strengths scale; they are not a small allowance.** A fixed strength cap turns the score into a defect counter, where four style defects outweigh any amount of demonstrated work. That misfires hardest on senior resumes, which carry both more evidence *and* more accumulated wording debt. Instead:
+
+> **A layer's deductions are reduced in proportion to the evidence in it.** Sum the deductions for the layer, count its `strength` findings, then **restore 15% of that total for each strength, to a maximum of 60%.** Four or more strengths means at most 40% of the deduction stands. Strengths never add points directly — a resume with no defects is already at 100.
+>
+> `layer = 100 − (deductions × (1 − min(0.15 × strengths, 0.60)))`
+
+The reasoning: a bullet that answers the spine does not merely add points, it changes how the weak bullets read. Six probeable achievements beside one vague section reads as a strong engineer with an unedited paragraph. One probeable achievement beside one vague section reads as a pattern. The same defect genuinely means something different depending on what surrounds it, and the arithmetic has to reflect that or it will reject people the rubric was built to redirect.
+
 **The overall score is the lowest layer score, never the average.** A resume travels exactly as far as its weakest filter — averaging lets a clean parse hide a dead layer 3, which is the specific lie this rubric exists to stop telling. The layer holding the minimum **is** the stop layer, and it must be named in the report next to the number: *"Stops at layer 2 — recruiter."*
 
-**Confidentiality is a ceiling, not a deduction.** Any unresolved leak caps the overall at **40**, whatever the layers say. It is fatal, invisible to the candidate, and free to fix — so it should dominate the number and then vanish from it entirely on the next run.
+**Confidentiality is a ceiling, not a deduction — and the ceiling is graded.** A single blunt cap treats "named my employer's customer against unreleased silicon" and "named a programme generation" as the same event. They are not, and applying the severe cap to the mild case destroys the report's credibility with exactly the senior readers who can tell the difference.
+
+| Severity | What it takes | Ceiling |
+|---|---|---|
+| **Severe** | A customer name, a codename, a node-plus-programme pair, or anything else that identifies unreleased silicon belonging to a named party | **40** |
+| **Moderate** | An unannounced programme or generation, bound to an employer only by inference, with no product, customer or node detail following | **70** |
+
+Both are still reported first and marked urgent — the exposure is real at either level and free to fix. Only the arithmetic differs. A moderate ceiling will often not bind at all, which is correct: it should warn without overriding an otherwise accurate score.
 
 **Mistargeting never deducts.** Archetype or discipline mismatch is reported as aim, not quality, and takes no points off. A strong signoff engineer chasing design roles scores as the strong engineer they are, with the mismatch named beside the score. Scoring aim as weakness would reproduce the exact error this rubric was built to correct.
 
@@ -75,7 +90,7 @@ So a resume scoring 40 whose minimum sits at layer 3 is banded **"Stops at the t
 The note under the layer row is **assembled from fixed sentences with numbers substituted**, not written fresh. It states arithmetic, so it must read identically for every candidate and must never invent specifics like how many words an edit takes.
 
 1. Always: *"Your layers score `{L1}` / `{L2}` / `{L3}`. The overall is the lowest of the three, not the average."*
-2. Only when the confidentiality ceiling is binding: *"The confidentiality finding below caps any resume at 40 until it is removed — without it, this page scores `{uncapped}`."*
+2. Only when the confidentiality ceiling is **actually binding** (the ceiling is below the layer minimum): *"The confidentiality finding below caps any resume at `{ceiling}` until it is removed — without it, this page scores `{uncapped}`."* A ceiling that does not bind is not mentioned in the note; the finding is still reported and still urgent.
 3. Always: *"Clearing what is flagged below projects to `{projected}`. Fix it and run this review again."*
 
 Nothing else goes in the note.
@@ -123,6 +138,21 @@ Several entries reward naming and this one rejects it. The boundary is not *spec
 
 Everything else is described by type. Under this rule: a shipped consumer platform is an asset (*Shipped silicon buried*); an unannounced codename is a reject; a client you sat inside for two years is nameable with the arrangement stated (*Recognisable client buried behind the staffing employer*); a customer your employer merely builds for is not.
 **Safe rewrites, which lose nothing:** codename → "a 7nm data-centre IO chiplet"; customer → "a leading EV manufacturer's AI accelerator programme"; internal tool → the standard it implements. Public architecture (AMBA, UCIe, PCIe, Arm MMU-700) stays.
+
+**THE BINDING TEST — apply before firing this entry.** A detail is a breach only when something **identifiable** is attached to it. Ask: *from this document alone, could a reader name the product, programme, customer or node this refers to?* If not, it does not fire, however technical the detail looks.
+
+| Fires | Does not fire |
+|---|---|
+| A figure bound to a named programme, codename, customer or node | A bare engineering figure — die area, port count, frequency, gate count — with no product attached |
+| "Currently working on *{unannounced programme}*" where the employer is stated or datable | The same programme named with no employer and no time anchor |
+| The mechanism, claim or method of an unfiled invention | The **field** of an invention — "an imaging sensor concept", "a power-management method" — with no mechanism |
+
+Two corollaries this exists to prevent, both observed as false positives:
+
+- **A bare metric is not a disclosure.** "A camera IP sub-system of roughly 8mm²" identifies nothing — no chip, no node, no customer, no programme. A competitor can act on none of it. Do not fire on the *shape* of a disclosure (a hard number sitting near current work); fire only on the binding.
+- **Field of invention is not the invention.** Patent exposure concerns the claims. Naming the domain, and marking the item as proposed or disclosed-internally, is the correct and honest form. Only the mechanism is protected.
+
+**Watch the time anchor.** Splitting a programme out of the employer section does not decouple it if the sentence says *"currently"* — the reader re-binds it to whatever employer is dated *Present*. Removing the employer only works when the time anchor goes too.
 **Probe:** —
 **Weight:** `reject` · report first, above the layer analysis, and mark it urgent — exposure continues while the document circulates
 **Layer:** 0
