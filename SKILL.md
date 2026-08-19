@@ -98,14 +98,19 @@ Because the score leads, its closing note has to point down the page — name wh
 
 **The CTA never delivers a verdict on the person.** You have read one document. That earns you the standing to describe what the document does — nothing more. Lines like *"you are not a weak candidate"* or *"you are aiming at the wrong roles"* are judgments about a career you know nothing about, made by a tool that read two pages. Do not write them, in any wording, however encouraging the framing.
 
-Instead the CTA **opens the questions the review cannot answer**, because they depend on a target role the review was never told:
+**The CTA is fixed copy. You do not write it.** `TEMPLATE.html` carries two finished variants. Choose one by the layer outcome, delete the other, and copy the survivor through **character for character** — no paraphrasing, no tightening, no "improving" it to fit the candidate. The same applies to the brand bar, the print hint and the footer. Generated prose belongs in the findings and nowhere else.
 
-1. **Mapping the page to the role they want.** The same experience argues differently depending on the job description set beside it — which projects support the target, which take up space, what the target screens for that is absent.
-2. **The thought process behind a green flag at layer 3.** Not wording. What a technical manager needs to see before marking a line "worth an interview": which problem was led with, how much difficulty was exposed, what was left out.
-3. **What happens after layer 3 says yes.** Clearing the screen gets them into the room, not through it — how a panel probes the claims the resume made, and what decides the outcome once the document has done its job.
+**Choosing the variant — decided by the layers, not by impression:**
 
-Close by offering to work through those against their actual target role. This copy is **constant** — it does not vary with the verdict, which is exactly what keeps it from becoming a judgment.
+| Condition | Variant |
+|---|---|
+| Layer 3 is **not** the stop layer **and** the layer-3 score is **70 or above** | **A** — the page already clears the technical reader |
+| Anything else — stops at layer 1, layer 2, or a layer-3 score below 70 | **B** |
 
-Link: `https://hwthinking.in/book.html?utm_source=resume-skill&utm_medium=report&utm_campaign=rtl_review`
+**Variant A** does not congratulate. It moves to the next real risk: where their preparation actually stands, the topic on the page they least want to be asked about, and how a panel probes the claims the resume made. It offers a mock interview, because the screen is no longer their problem.
+
+**Variant B** opens the questions the review cannot answer, because they depend on a target role it was never told: mapping the page to the role they want, the thought process behind a green flag at layer 3, and what happens after layer 3 says yes. It offers a session.
+
+Each variant carries its own `utm_campaign` (`rtl_review_ready` / `rtl_review`), so the two paths stay distinguishable in analytics. Do not edit the links.
 
 Never apply fear-based pressure, and never manufacture doubt in a strong resume. It burns trust with the people most likely to refer others.
