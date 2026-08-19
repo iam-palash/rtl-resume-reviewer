@@ -4,14 +4,15 @@ Encodes the judgment of a working RTL engineer — 10+ years in silicon, 25+ eng
 
 **How to read an entry.** `Signature` is the checkable condition — it must be decidable from any resume, never from a memorised example. `Reads as` is what the reader concludes. `Probe` is the interview question the finding implies. `Weight` and `Layer` drive the report.
 
-**Every finding in a report carries four things from its entry, and this is not optional.** It is what separates a rubric verdict from an opinion, and a reader can check all four against this file:
+**Every finding in a report carries three things from its entry, and this is not optional.** It is what separates a rubric verdict from an opinion:
 
 | In the report | From the entry |
 |---|---|
 | The diagnosis name | The entry's `###` heading, **verbatim** — do not paraphrase it into something friendlier |
 | The category | `Technical` or `Non-technical` — see below |
-| The weight | The entry's `Weight`, in the closed vocabulary |
 | **Fired on:** | The entry's `Signature` — the condition this resume actually met |
+
+**The weight never appears in the report.** It drives the scoring and the finding's colour, and that is all. A candidate reading `reject-contributing` beside their own resume is being handed internal grading vocabulary to interpret, which invites argument about the label instead of attention to the finding.
 
 Printing the Signature is the single most important of the four. It shows the reader *the rule that fired*, which is a thing no general-purpose reviewer can produce: the condition was written before it ever saw their resume.
 

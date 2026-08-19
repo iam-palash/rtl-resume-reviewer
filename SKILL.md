@@ -107,7 +107,9 @@ Do not restate them per candidate, and do not add a fourth. Anything specific to
 
 **One resume, one reader.** Speak only about the document in front of you. Never reference other candidates, the calibration corpus, or "engineers like you". You have no corpus — you have this resume.
 
-**Every finding shows its rubric provenance.** Four fields, taken from the entry that fired, in this order: the **diagnosis name** (the entry's heading, verbatim), the **category** (`Technical` / `Non-technical`), the **weight**, and **Fired on:** — the entry's `Signature`, the checkable condition this resume met.
+**Every finding shows its rubric provenance.** Three fields, taken from the entry that fired, in this order: the **diagnosis name** (the entry's heading, verbatim), the **category** (`Technical` / `Non-technical`), and **Fired on:** — the entry's `Signature`, the checkable condition this resume met.
+
+**The weight stays out of the report.** It sets the score and the finding's colour; it is not shown to the candidate.
 
 The Signature line is the point of the whole exercise. Anyone can write plausible resume advice; showing the rule that fired proves a written rubric decided this, and that the rule existed before it saw this resume. Never invent a diagnosis name for something the rubric does not contain — if no entry fires, there is no finding.
 
