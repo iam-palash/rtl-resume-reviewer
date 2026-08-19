@@ -100,6 +100,8 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .finding.probe{background:var(--amberbg);border-color:#fde68a;}
 .finding.flair{background:var(--greenbg);border-color:#a7f3d0;}
 .diag{display:flex;flex-wrap:wrap;gap:.3rem .45rem;align-items:center;margin:-.2rem 0 .5rem;}
+.diag .code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.63rem;font-weight:700;letter-spacing:.03em;color:var(--accent2);background:rgba(108,99,255,.11);border:1px solid rgba(108,99,255,.25);padding:.11rem .38rem;border-radius:4px;}
+.diag .code.doc{color:var(--muted);background:rgba(17,17,24,.05);border-color:var(--border);}
 .diag .name{font-size:.74rem;font-weight:800;color:var(--text);letter-spacing:-.1px;}
 .diag .cat{font-size:.56rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;padding:.13rem .42rem;border-radius:4px;}
 .diag .cat.tech{background:rgba(108,99,255,.15);color:var(--accent2);}
@@ -262,6 +264,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="finding flag">
       <div class="finding-head"><span class="chip">Flag</span><span class="finding-title">REPLACE — plain-language headline</span></div>
       <div class="diag">
+        <span class="code">REPLACE — RTL-### or DOC-###</span>
         <span class="name">REPLACE — rubric entry name, exactly as written</span>
         <span class="cat nontech">Non-technical</span>
       </div>
@@ -283,6 +286,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="finding probe">
       <div class="finding-head"><span class="chip">Probe</span><span class="finding-title">REPLACE — plain-language headline</span></div>
       <div class="diag">
+        <span class="code">REPLACE — RTL-### or DOC-###</span>
         <span class="name">REPLACE — rubric entry name, exactly as written</span>
         <span class="cat tech">Technical</span>
       </div>
@@ -304,6 +308,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="finding flair">
       <div class="finding-head"><span class="chip">Strength</span><span class="finding-title">REPLACE — plain-language headline</span></div>
       <div class="diag">
+        <span class="code">REPLACE — RTL-### or DOC-###</span>
         <span class="name">REPLACE — rubric entry name, exactly as written</span>
         <span class="cat tech">Technical</span>
       </div>
@@ -315,6 +320,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="finding probe">
       <div class="finding-head"><span class="chip">Probe</span><span class="finding-title">REPLACE — plain-language headline</span></div>
       <div class="diag">
+        <span class="code">REPLACE — RTL-### or DOC-###</span>
         <span class="name">REPLACE — rubric entry name, exactly as written</span>
         <span class="cat tech">Technical</span>
       </div>

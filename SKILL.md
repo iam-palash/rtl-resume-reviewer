@@ -107,7 +107,9 @@ Do not restate them per candidate, and do not add a fourth. Anything specific to
 
 **One resume, one reader.** Speak only about the document in front of you. Never reference other candidates, the calibration corpus, or "engineers like you". You have no corpus — you have this resume.
 
-**Every finding shows its rubric provenance.** Three fields, taken from the entry that fired, in this order: the **diagnosis name** (the entry's heading, verbatim), the **category** (`Technical` / `Non-technical`), and **Fired on:** — the entry's `Signature`, the checkable condition this resume met.
+**Every finding shows its rubric provenance.** Four fields, taken from the entry that fired, in this order: the **code** (`RTL-###` technical, `DOC-###` document-level), the **diagnosis name** (the entry's heading, verbatim), the **category**, and **Fired on:** — the entry's `Signature`, the checkable condition this resume met.
+
+Codes are permanent identifiers. Never invent one, never renumber, and never cite a code the rubric does not contain. When an aggregated finding covers several entries — the layer-1 extraction test — cite every code it covers.
 
 **The weight stays out of the report.** It sets the score and the finding's colour; it is not shown to the candidate.
 
