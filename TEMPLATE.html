@@ -125,11 +125,18 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
 footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
 
+@page{margin:12mm 11mm;}
 @media print{
-  body{font-size:11.5pt;}
+  /* Save-as-PDF is the target, not paper. Browsers drop background colour
+     from PDFs unless told otherwise, which would erase every severity signal
+     in this report, so force it. */
+  *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;}
+  body{font-size:10.5pt;background:#fff;}
   .page{max-width:none;padding:0;}
   .no-print{display:none !important;}
-  .finding,.section,.cta,.funnel{break-inside:avoid;}
+  .finding,.section,.cta,.funnel,.scorecard,.capmap,.urgent,.verdict-box,.caprow{break-inside:avoid;}
+  .section-head,.finding-head{break-after:avoid;}
+  h1,h2,h3{break-after:avoid;}
   a{text-decoration:none;color:var(--accent2);}
   .cta a.btn{border:1px solid var(--accent2);}
 }
@@ -320,7 +327,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="fine">Reviewed against an open rubric — read or fork it at <a href="https://github.com/iam-palash">github.com/iam-palash</a></div>
   </div>
 
-  <div class="print-hint no-print">Keep this review — press <strong>Ctrl/Cmd + P</strong> → <strong>Save as PDF</strong>. Nothing to install.</div>
+  <div class="print-hint no-print">Save this review — press <strong>Ctrl/Cmd + P</strong> → destination <strong>Save as PDF</strong>. Turn on <strong>Background graphics</strong> to keep the colour coding.</div>
 
   <!-- FIXED COPY — DO NOT REWRITE. Copy this block through verbatim. -->
   <footer>
