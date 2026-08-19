@@ -72,6 +72,12 @@ Order: **brand bar → scorecard → confidentiality (if any) → buried asset (
 
 The scorecard sits **directly under the header**, before anything else. It is the first thing read and it carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Everything below it is the explanation of that number.
 
+**The scorecard is arithmetic, not prose. You substitute numbers; you do not compose sentences.**
+
+- The **band name** takes the stop layer's label from the rubric — *"Stops at the technical screen"*. The phrase *"the named layer"* is an instruction in the rubric table, never text for a reader.
+- The **score note** is assembled from the rubric's three fixed sentences with numbers dropped in. Sentence 2 is included only when a confidentiality ceiling is binding. Do not add commentary, and never invent specifics such as how many words a fix requires — you do not know that.
+- Do not state the stop layer twice. The band names it; the line beneath gives the layer number and reader, then the rule that the score is the weakest screen.
+
 Because the score leads, its closing note has to point down the page — name what is holding the number down, then *"fix what is below and run this review again."* When a confidentiality ceiling is capping the score, say so in that note; it is what sends the reader into the urgent block that follows.
 
 **Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.

@@ -56,9 +56,29 @@ Report both numbers together: **where they are now, and where the fixes in this 
 |---|---|
 | 85–100 | Clears all three screens |
 | 70–84 | Gets calls — expect pressure in the room |
-| 50–69 | Stalls at the named layer |
-| 30–49 | Stops at the named layer |
+| 50–69 | Stalls at *{stop layer}* |
+| 30–49 | Stops at *{stop layer}* |
 | 0–29 | Does not survive first contact |
+
+`{stop layer}` is substituted, never printed literally. Use these labels exactly:
+
+| Layer | Label |
+|---|---|
+| 1 | the parser |
+| 2 | the recruiter screen |
+| 3 | the technical screen |
+
+So a resume scoring 40 whose minimum sits at layer 3 is banded **"Stops at the technical screen"** — never "stops at the named layer", which is an instruction to you, not a phrase for a reader.
+
+### The score note — fixed sentences
+
+The note under the layer row is **assembled from fixed sentences with numbers substituted**, not written fresh. It states arithmetic, so it must read identically for every candidate and must never invent specifics like how many words an edit takes.
+
+1. Always: *"Your layers score `{L1}` / `{L2}` / `{L3}`. The overall is the lowest of the three, not the average."*
+2. Only when the confidentiality ceiling is binding: *"The confidentiality finding below caps any resume at 40 until it is removed — without it, this page scores `{uncapped}`."*
+3. Always: *"Clearing what is flagged below projects to `{projected}`. Fix it and run this review again."*
+
+Nothing else goes in the note.
 
 ---
 
