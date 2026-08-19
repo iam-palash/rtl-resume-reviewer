@@ -42,6 +42,14 @@ Run this **before** the layer analysis and report it **first, above everything**
 
 A candidate leaking an unannounced codename or a customer name does not need to hear about their bullet verbs yet. Mark it urgent — the exposure continues for as long as the document circulates. Apply the disclosure boundary rule exactly; publicly shipped products are an asset, not a leak.
 
+### Step 4b — Segment, then map capability
+
+**Segment first (Gate 0).** Classify every block as *narrative*, *scan* or *credential*. Apply the spine only to narrative. A tools list is meant to be a list; a two-column layout is a design decision; recent roles described in more detail than old ones is correct practice. Judging these as writing defects is what an ATS does, and it is the largest source of false positives in this rubric's history.
+
+**Then run the capability map (Gate B), before looking for anything wrong.** Decide grip — *Demonstrated / Touched / Absent* — across the eight areas, using the spine positively. At 8+ years, assess PPA explicitly and name it in those words.
+
+This section leads the report. State the count against the band's bar as a plain sentence. An `Absent` area is information about aim, never a criticism.
+
 ### Step 5 — Layer analysis
 
 Work each layer in order and determine, honestly, **where this resume stops**:
@@ -68,7 +76,9 @@ Generate a single self-contained HTML file from `TEMPLATE.html` — every style 
 
 **Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is *and* that you have opened it, then mention Cmd/Ctrl+P → Save as PDF as the way to keep or send it.
 
-Order: **brand bar → scorecard → confidentiality (if any) → buried asset (if any) → funnel strip → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+Order: **brand bar → scorecard → capability map → confidentiality (if any) → buried asset (if any) → funnel strip → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+
+**Cap the findings at three per layer**, ranked by what actually costs the candidate most. Anything further goes into a single closing line — *"Also worth a pass: …"* — not its own box. Twelve full-width flags make a capable engineer's resume look riddled no matter how fairly each one is worded, and the reader's takeaway comes from the volume, not the text.
 
 The scorecard sits **directly under the header**, before anything else. It is the first thing read and it carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Everything below it is the explanation of that number.
 

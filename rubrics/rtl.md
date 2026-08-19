@@ -55,6 +55,16 @@ The reasoning: a bullet that answers the spine does not merely add points, it ch
 
 Both are still reported first and marked urgent — the exposure is real at either level and free to fix. Only the arithmetic differs. A moderate ceiling will often not bind at all, which is correct: it should warn without overriding an otherwise accurate score.
 
+**Demonstrated capability sets a floor at layer 3.** The technical reader's question is whether this person can do the work. Once the page has answered that in several areas, wording debt can cost points but must not drag the score into rejection.
+
+| Demonstrated areas (Gate B) | Layer-3 floor |
+|---|---|
+| 4 or more | **75** |
+| 2 to 3 | **60** |
+| 0 to 1 | none |
+
+The floor applies to layer 3 only — a parse failure or a recruiter-level filter can still stop a capable engineer, and the report must be able to say so.
+
 **Mistargeting never deducts.** Archetype or discipline mismatch is reported as aim, not quality, and takes no points off. A strong signoff engineer chasing design roles scores as the strong engineer they are, with the mismatch named beside the score. Scoring aim as weakness would reproduce the exact error this rubric was built to correct.
 
 ### The projected score
@@ -94,6 +104,63 @@ The note under the layer row is **assembled from fixed sentences with numbers su
 3. Always: *"Clearing what is flagged below projects to `{projected}`. Fix it and run this review again."*
 
 Nothing else goes in the note.
+
+---
+
+## Gate 0 · Segment the document before judging any of it
+
+**A resume is not one kind of text.** Judging every block by the same standard is the single largest source of false positives, and it is what an ATS does. Classify each block first:
+
+| Block type | What it is | Judge it on | Never judge it on |
+|---|---|---|---|
+| **Narrative** | Summary, experience bullets, project descriptions | The spine — action, difficulty, outcome | — |
+| **Scan** | Skills, tools, highlights sidebars, keyword blocks | Whether it is scannable and accurate | The spine. **A tools list is supposed to be a list.** |
+| **Credential** | Education, certifications, patents, publications | Relevance and currency for the tenure band | The spine, or richness of description |
+
+Two consequences, both observed as false positives on real resumes:
+
+- **A two-column layout is a design decision, not damage.** A scannable sidebar beside a narrative column is what a human reader wants. If it extracts badly, that is a *layer-1 parse risk to verify* — never a writing defect.
+- **Reverse-weighted detail is correct practice.** Recent employers described fully and older ones compressed to one line each is what a reader wants. Do not report it as an inconsistency.
+
+---
+
+## Gate B · The capability map — run before looking for anything wrong
+
+**Establish what the candidate demonstrably owns before you look for defects.** A report that opens with a defect list is a linter. The most useful thing a domain reader provides is a read of *capability*, and it is the one output no keyword tool can produce.
+
+Assess each area below. Use the **same spine test, positively**:
+
+| Grip | Condition |
+|---|---|
+| **Demonstrated** | An attributable action **and** a specific artifact or mechanism **and** an outcome, measurement or resolved difficulty |
+| **Touched** | Named as a tool, responsibility or exposure, with no outcome attached |
+| **Absent** | Not present on the page |
+
+**The areas.** PPA first — it is the axis hiring managers actually think in — then the delivery axes:
+
+| Area | What counts as evidence |
+|---|---|
+| **Power** | UPF, power domains, retention, clock gating, power collapse, static power checks, low-power intent |
+| **Performance** | Timing closure, STA, frequency targets, critical path work, pipelining, throughput architecture |
+| **Area** | Area reduction with numbers, floorplan-aware RTL, macro partitioning, gate-count work |
+| **Micro-architecture / RTL authored** | A block written from a specification — FSMs, datapath, protocol logic the candidate designed |
+| **Integration** | SoC or sub-system assembly, IP integration, interface connectivity, hand-offs |
+| **Synthesis & implementation flow** | Synthesis ownership, constraints, DFT-aware netlists, LEC/Formality, flow infrastructure |
+| **Quality & signoff** | Lint, CDC, RDC, static checks, review ownership, ECO discipline |
+| **Bring-up & debug** | Silicon or emulation bring-up, simulation debug, root-cause work, post-silicon issues |
+
+**The expectation, by band.** Breadth is not the goal — **depth in a few areas is.**
+
+| Band | Reasonable expectation |
+|---|---|
+| 0–2 | One area touched is normal. Demonstrated anywhere is a strong signal. |
+| 2–5 | One to two demonstrated. |
+| 5–8 | Two demonstrated. |
+| **8+** | **Two to three demonstrated is healthy.** Assess PPA explicitly and name it — at this tenure a reader is mapping the candidate onto power, performance and area whether or not the resume uses those words. |
+
+**Report it as a map, above the findings**, naming the evidence for each demonstrated area. Then state the count against the bar plainly: *"six demonstrated areas against a bar of two or three"* is the headline of that report, and it must not be buried under what is wrong.
+
+**An `Absent` area is information, not criticism.** It tells the candidate which roles they are currently arguing for and which they are not. Say it that way. A candidate with strong signoff evidence and no authored RTL is not weak — they are aimed at the wrong requisition, which is the single most valuable thing this review can surface.
 
 ---
 

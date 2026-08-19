@@ -49,6 +49,22 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .score-note{font-size:.78rem;color:var(--muted);margin-top:.9rem;padding-top:.75rem;border-top:1px solid var(--border);}
 .score-note strong{color:var(--text);}
 
+/* CAPABILITY MAP */
+.capmap{border:1px solid var(--border);border-radius:11px;padding:1.1rem 1.2rem;margin-bottom:1.5rem;}
+.capmap h2{font-size:1.02rem;font-weight:800;margin-bottom:.2rem;}
+.capmap .lead{font-size:.85rem;color:var(--muted);margin-bottom:.9rem;}
+.capmap .lead strong{color:var(--text);}
+.caprow{display:grid;grid-template-columns:150px 86px 1fr;gap:.5rem .7rem;align-items:start;padding:.45rem 0;border-top:1px solid var(--border);}
+.caprow .area{font-weight:700;font-size:.83rem;}
+.caprow .ev{font-size:.79rem;color:var(--muted);}
+.grip{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;padding:.15rem .45rem;border-radius:100px;display:inline-block;white-space:nowrap;}
+.grip.demo{background:var(--green);color:#fff;}
+.grip.touch{background:var(--amber);color:#fff;}
+.grip.absent{background:var(--bg2);color:var(--muted);border:1px solid var(--border);}
+.capnote{font-size:.8rem;margin-top:.9rem;padding-top:.75rem;border-top:1px solid var(--border);color:var(--muted);}
+.capnote strong{color:var(--text);}
+@media(max-width:560px){.caprow{grid-template-columns:1fr;gap:.15rem;}}
+
 /* FUNNEL */
 .funnel{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap;}
 .stage{
@@ -157,6 +173,20 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     </div>
     <!-- FIXED SENTENCES — substitute numbers only. Drop sentence 2 when no confidentiality ceiling applies. -->
     <div class="score-note">Your layers score <strong>REPLACE</strong> / <strong>REPLACE</strong> / <strong>REPLACE</strong>. The overall is the lowest of the three, not the average. The confidentiality finding below caps any resume at <strong>REPLACE</strong> until it is removed — without it, this page scores <strong>REPLACE</strong>. Clearing what is flagged below projects to <strong>REPLACE</strong>. <strong>Fix it and run this review again.</strong></div>
+  </div>
+
+  <div class="capmap">
+    <h2>What this page demonstrates</h2>
+    <div class="lead">Assessed before anything else, and on evidence rather than keywords: an area counts as <strong>demonstrated</strong> only where an action, a specific artifact and an outcome all appear together.</div>
+    <div class="caprow"><div class="area">Power</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE — the evidence, in their words</div></div>
+    <div class="caprow"><div class="area">Performance</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Area</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE — named, but no outcome attached</div></div>
+    <div class="caprow"><div class="area">Micro-architecture</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE — what a reader looked for and did not find</div></div>
+    <div class="caprow"><div class="area">Integration</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Synthesis &amp; flow</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Quality &amp; signoff</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Bring-up &amp; debug</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE</div></div>
+    <div class="capnote">REPLACE — the count against the band's bar, stated plainly, then what the absent areas say about aim rather than ability.</div>
   </div>
 
   <div class="funnel">
