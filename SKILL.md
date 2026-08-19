@@ -90,6 +90,17 @@ The scorecard sits **directly under the header**, before anything else. It is th
 
 Because the score leads, its closing note has to point down the page — name what is holding the number down, then *"fix what is below and run this review again."* When a confidentiality ceiling is capping the score, say so in that note; it is what sends the reader into the urgent block that follows.
 
+**The layer lines are fixed copy.** The framing sentence above the funnel and the one-line note under each layer heading describe *the model*, not the candidate — so they are identical in every report and are copied through verbatim:
+
+| Where | Line |
+|---|---|
+| Above the funnel | Every open role draws hundreds of applications. Three filters cut them down, and each one reads for something different. |
+| Layer 1 | Hundreds arrive. This cuts them to twenty or thirty — on format, never on merit. |
+| Layer 2 | Thirty resumes, thirty seconds each. Scanning for the skills the role names. |
+| Layer 3 | The engineer who will hire you. Reading for what you did and what changed. |
+
+Do not restate them per candidate, and do not add a fourth. Anything specific to this resume belongs in a finding.
+
 **Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
 
 ## Output rules
