@@ -74,9 +74,9 @@ Generate a single self-contained HTML file from `TEMPLATE.html` — every style 
 
 **Where to write it:** alongside the resume, named `<resume-filename>-review.html`. Never a temp directory — the user will not find it there.
 
-**Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is *and* that you have opened it, then mention Cmd/Ctrl+P → Save as PDF as the way to keep or send it.
+**Then open it for them.** Run `open` on macOS, `xdg-open` on Linux, `start ""` on Windows. Do not hand back a path and expect the user to know that clicking it in an editor shows source code instead of a page. Tell them where the file is and that you have opened it. The page is styled to export cleanly if they choose to save it as a PDF, but do not instruct them to — the report should not spend its closing space on housekeeping.
 
-Order: **brand bar → scorecard → capability map → confidentiality (if any) → buried asset (if any) → funnel strip → verdict → layer 1 → layer 2 → layer 3 → CTA → print hint → footer.**
+Order: **brand bar → scorecard → capability map → confidentiality (if any) → buried asset (if any) → funnel strip → verdict → layer 1 → layer 2 → layer 3 → CTA → footer.**
 
 **Cap the findings at three per layer**, ranked by what actually costs the candidate most. Anything further goes into a single closing line — *"Also worth a pass: …"* — not its own box. Twelve full-width flags make a capable engineer's resume look riddled no matter how fairly each one is worded, and the reader's takeaway comes from the volume, not the text.
 
@@ -101,7 +101,7 @@ Because the score leads, its closing note has to point down the page — name wh
 
 Do not restate them per candidate, and do not add a fourth. Anything specific to this resume belongs in a finding.
 
-**Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive printing — the print hint is the only element the PDF drops. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
+**Attribution is not optional chrome.** The brand bar above the headline and the footer ownership line carry the rubric's authorship and the Tranquil Light Foundation mentorship framing. They stay in every generated report, and they must survive export to PDF. This report travels: it gets shared with friends, posted, forwarded to recruiters. It should say who wrote the judgment inside it.
 
 ## Output rules
 
@@ -125,7 +125,7 @@ Do not restate them per candidate, and do not add a fourth. Anything specific to
 
 **The CTA never delivers a verdict on the person.** You have read one document. That earns you the standing to describe what the document does — nothing more. Lines like *"you are not a weak candidate"* or *"you are aiming at the wrong roles"* are judgments about a career you know nothing about, made by a tool that read two pages. Do not write them, in any wording, however encouraging the framing.
 
-**The CTA is fixed copy. You do not write it.** `TEMPLATE.html` carries two finished variants. Choose one by the layer outcome, delete the other, and copy the survivor through **character for character** — no paraphrasing, no tightening, no "improving" it to fit the candidate. The same applies to the brand bar, the print hint and the footer. Generated prose belongs in the findings and nowhere else.
+**The CTA is fixed copy. You do not write it.** `TEMPLATE.html` carries two finished variants. Choose one by the layer outcome, delete the other, and copy the survivor through **character for character** — no paraphrasing, no tightening, no "improving" it to fit the candidate. The same applies to the brand bar, the layer lines and the footer. Generated prose belongs in the findings and nowhere else.
 
 **Choosing the variant — decided by the layers, not by impression:**
 
