@@ -23,8 +23,6 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .bb-primary{font-size:.82rem;color:var(--text);}
 .bb-primary strong{font-weight:800;letter-spacing:.1px;}
 .bb-primary .role{color:var(--muted);}
-.bb-creds{font-size:.72rem;color:var(--muted);margin-top:.12rem;}
-.bb-creds strong{color:var(--text);font-weight:700;}
 .bb-secondary{font-size:.72rem;color:var(--muted);}
 .bb-secondary strong{font-weight:700;color:var(--muted);}
 
@@ -133,6 +131,10 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .cta .q{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:.5rem .7rem;}
 .cta .q b{font-size:.79rem;font-weight:700;color:var(--text);}
 .cta .q span{font-size:.79rem;color:var(--muted);line-height:1.45;}
+.cta .cred{font-size:.8rem;color:var(--muted);margin:.85rem auto 0;max-width:60ch;padding-top:.7rem;border-top:1px solid var(--border);}
+.cta .cred strong{color:var(--text);font-weight:700;}
+.foot-cta{font-size:.78rem;color:var(--muted);text-align:center;margin-top:1.6rem;padding-top:.9rem;border-top:1px solid var(--border);}
+.foot-cta a{color:var(--accent2);text-decoration:none;font-weight:700;}
 footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
 footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
 
@@ -161,7 +163,6 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
   <div class="brandbar">
     <div>
       <div class="bb-primary">Rubric by <strong>Palash Khandale</strong> <span class="role">· RTL engineer &amp; mentor</span></div>
-      <div class="bb-creds"><strong>10+ years</strong> in silicon · <strong>25+ engineers</strong> mentored</div>
     </div>
     <span class="bb-secondary">Released free by the <strong>Tranquil Light Foundation</strong></span>
   </div>
@@ -169,7 +170,7 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
   <div class="masthead">
     <div class="kicker">RTL Resume Review</div>
     <h1>Your resume is screened 3x. Here is where yours stops.</h1>
-    <div class="byline">Reviewed against the open RTL rubric · <a href="https://hwthinking.in">hwthinking.in</a></div>
+    <div class="byline">Reviewed against the open RTL rubric · hwthinking.in</div>
   </div>
 
   <div class="scorecard">
@@ -350,7 +351,8 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
       <div class="q"><b>How a panel probes what you claimed.</b> <span>The lines that won you the call are the lines they push on.</span></div>
     </div>
     <p class="close">Pressure-test these before someone else does — <em>that is what a mock interview is for.</em></p>
-    <a class="btn" href="https://hwthinking.in/book.html?utm_source=resume-skill&amp;utm_medium=report&amp;utm_campaign=rtl_review_ready">Book a mock interview →</a>
+    <a class="btn" href="https://hwthinking.in/book.html?utm_source=resume-skill&amp;utm_medium=report&amp;utm_campaign=rtl_review_ready">Book a mock interview with Palash →</a>
+    <div class="cred">Sessions are with <strong>Palash Khandale</strong>, who wrote this rubric &mdash; <strong>10+ years</strong> in silicon, <strong>25+ engineers</strong> mentored.</div>
 
     <!-- VARIANT B — the page stops at layer 1 or layer 2 -->
     <h3>What would this page have to say to get a <span class="gf">green flag</span> at layer 3?</h3>
@@ -360,10 +362,13 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
       <div class="q"><b>After layer 3 says yes.</b> <span>Clearing the screen gets you into the room, not through it.</span></div>
     </div>
     <p class="close">Work through these against your target role and your actual resume — <em>that is what a session is for.</em></p>
-    <a class="btn" href="https://hwthinking.in/book.html?utm_source=resume-skill&amp;utm_medium=report&amp;utm_campaign=rtl_review">Book a session →</a>
+    <a class="btn" href="https://hwthinking.in/book.html?utm_source=resume-skill&amp;utm_medium=report&amp;utm_campaign=rtl_review">Book a session with Palash →</a>
+    <div class="cred">Sessions are with <strong>Palash Khandale</strong>, who wrote this rubric &mdash; <strong>10+ years</strong> in silicon, <strong>25+ engineers</strong> mentored.</div>
   </div>
 
   <!-- FIXED COPY — DO NOT REWRITE. Copy this block through verbatim. -->
+  <div class="foot-cta">Someone sent you this? Run the same review on your own resume &mdash; <a href="https://hwthinking.in">hwthinking.in</a></div>
+
   <footer>
     <span>Rubric by <strong>Palash Khandale</strong> · released free by the Tranquil Light Foundation · MIT licensed</span>
     <span><a href="https://hwthinking.in">hwthinking.in</a></span>

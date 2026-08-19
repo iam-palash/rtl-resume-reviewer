@@ -135,6 +135,8 @@ The Signature line is the point of the whole exercise. Anyone can write plausibl
 
 **The CTA never delivers a verdict on the person.** You have read one document. That earns you the standing to describe what the document does — nothing more. Lines like *"you are not a weak candidate"* or *"you are aiming at the wrong roles"* are judgments about a career you know nothing about, made by a tool that read two pages. Do not write them, in any wording, however encouraging the framing.
 
+**Credentials belong at the ask, not in the header.** The line naming Palash's experience sits under the CTA button, where the reader is being asked to book, not at the top of the page where they have no reason to care yet. The header carries authorship only. The footer carries one line inviting a forwarded reader to run the review themselves — this report circulates, and that line is the only thing converting second-hand readers. All three are fixed copy.
+
 **The CTA is fixed copy. You do not write it.** `TEMPLATE.html` carries two finished variants. Choose one by the layer outcome, delete the other, and copy the survivor through **character for character** — no paraphrasing, no tightening, no "improving" it to fit the candidate. The same applies to the brand bar, the layer lines and the footer. Generated prose belongs in the findings and nowhere else.
 
 **Choosing the variant — decided by the layers, not by impression:**
