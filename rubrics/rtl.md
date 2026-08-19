@@ -4,6 +4,26 @@ Encodes the judgment of a working RTL engineer — 10+ years in silicon, 25+ eng
 
 **How to read an entry.** `Signature` is the checkable condition — it must be decidable from any resume, never from a memorised example. `Reads as` is what the reader concludes. `Probe` is the interview question the finding implies. `Weight` and `Layer` drive the report.
 
+**Every finding in a report carries four things from its entry, and this is not optional.** It is what separates a rubric verdict from an opinion, and a reader can check all four against this file:
+
+| In the report | From the entry |
+|---|---|
+| The diagnosis name | The entry's `###` heading, **verbatim** — do not paraphrase it into something friendlier |
+| The category | `Technical` or `Non-technical` — see below |
+| The weight | The entry's `Weight`, in the closed vocabulary |
+| **Fired on:** | The entry's `Signature` — the condition this resume actually met |
+
+Printing the Signature is the single most important of the four. It shows the reader *the rule that fired*, which is a thing no general-purpose reviewer can produce: the condition was written before it ever saw their resume.
+
+**Category — two values, decided by what the finding is about.**
+
+| Category | What it covers |
+|---|---|
+| **Technical** | The engineering content and how it is argued — claims, evidence, artifacts, tools, ownership, outcomes, domain wording, the spine |
+| **Non-technical** | Everything a reader who cannot evaluate silicon would still catch — grammar, spelling, tense, layout, extraction, dates, education, credentials, section ordering, personal data |
+
+Confidentiality is `Non-technical`: it is a judgment about professional conduct, not about engineering ability, and it is caught by readers who could not review a line of RTL.
+
 **Weights — closed set, single value, nothing else.**
 
 | Weight | Meaning |

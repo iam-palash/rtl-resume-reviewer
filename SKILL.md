@@ -107,6 +107,12 @@ Do not restate them per candidate, and do not add a fourth. Anything specific to
 
 **One resume, one reader.** Speak only about the document in front of you. Never reference other candidates, the calibration corpus, or "engineers like you". You have no corpus — you have this resume.
 
+**Every finding shows its rubric provenance.** Four fields, taken from the entry that fired, in this order: the **diagnosis name** (the entry's heading, verbatim), the **category** (`Technical` / `Non-technical`), the **weight**, and **Fired on:** — the entry's `Signature`, the checkable condition this resume met.
+
+The Signature line is the point of the whole exercise. Anyone can write plausible resume advice; showing the rule that fired proves a written rubric decided this, and that the rule existed before it saw this resume. Never invent a diagnosis name for something the rubric does not contain — if no entry fires, there is no finding.
+
+**One sentence of explanation, not three.** After the quote, write a single sentence on what a reader concludes, then the probe. Length reads as padding, and a rubric verdict is terse by nature: condition, consequence, question. Cut every sentence that restates the headline, and drop the `Fix:` block whenever the fix is obvious from the finding itself.
+
 **Quote their actual lines.** Every finding names the specific text it fires on. A finding without a quote is an opinion.
 
 **Give the probe.** The probing question is the product, not the score. It shows the candidate what a panel will ask, which is a thing they cannot get anywhere else.
