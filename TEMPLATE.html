@@ -149,7 +149,21 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
   body{font-size:10.5pt;background:#fff;}
   .page{max-width:none;padding:0;}
   .no-print{display:none !important;}
-  .finding,.section,.cta,.funnel,.scorecard,.capmap,.urgent,.verdict-box,.caprow{break-inside:avoid;}
+  /* Deliberate page units. Blocks that are bigger than a page must be
+     allowed to flow, or they jump wholesale and leave half a page blank. */
+  .finding,.cta,.funnel,.scorecard,.urgent,.verdict-box,.caprow,.q,.slay{break-inside:avoid;}
+  .section,.capmap,.qs,.score-layers{break-inside:auto;}
+
+  /* PAGE 1 — the summary: who wrote it, the score, what the page demonstrates */
+  .capmap{break-after:page;}
+  /* PAGE 2 — the urgent finding, the funnel and the verdict */
+  .verdict-box{break-after:page;}
+  /* FINAL PAGE — the ask, never split from the guarantee under it */
+  .cta{break-before:page;}
+
+  /* nothing strands at a page foot */
+  .legend,.section-head,.layer-note,.finding-head,.diag,h1,h2,h3{break-after:avoid;}
+  .fired,.quote{break-after:avoid;}
   .section-head,.finding-head{break-after:avoid;}
   h1,h2,h3{break-after:avoid;}
   a{text-decoration:none;color:var(--accent2);}
