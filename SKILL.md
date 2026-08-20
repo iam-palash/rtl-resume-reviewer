@@ -82,6 +82,8 @@ Order: **brand bar → scorecard → capability map → confidentiality (if any)
 
 The scorecard sits **directly under the header**, before anything else. It is the first thing read and it carries three things in one glance: the overall score, **the layer it stops at, stated in words**, and the projected score after the listed fixes. Everything below it is the explanation of that number.
 
+**Count strengths strictly.** A `strength` in the scoring formula is a finding from a `strength`-weighted rubric entry — there are three in the file. Demonstrated areas from the capability map are **not** strengths; they set the layer-3 floor and nothing more. Counting them twice inflates layer 3 and is the exact drift this rule exists to prevent.
+
 **The scorecard is arithmetic, not prose. You substitute numbers; you do not compose sentences.**
 
 - The **band name** takes the stop layer's label from the rubric — *"Stops at the technical screen"*. The phrase *"the named layer"* is an instruction in the rubric table, never text for a reader.

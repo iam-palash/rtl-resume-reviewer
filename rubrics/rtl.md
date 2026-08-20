@@ -62,7 +62,11 @@ Clamp each layer to 0–100.
 
 **Strengths scale; they are not a small allowance.** A fixed strength cap turns the score into a defect counter, where four style defects outweigh any amount of demonstrated work. That misfires hardest on senior resumes, which carry both more evidence *and* more accumulated wording debt. Instead:
 
-> **A layer's deductions are reduced in proportion to the evidence in it.** Sum the deductions for the layer, count its `strength` findings, then **restore 15% of that total for each strength, to a maximum of 60%.** Four or more strengths means at most 40% of the deduction stands. Strengths never add points directly — a resume with no defects is already at 100.
+> **A layer's deductions are reduced in proportion to the evidence in it.** Sum the deductions for the layer, count its `strength` findings, then **restore 15% of that total for each strength, to a maximum of 60%.** Strengths never add points directly — a resume with no defects is already at 100.
+
+**A `strength` here means a finding fired from a `strength`-weighted entry, and nothing else.** There are only three such entries in this file, so a resume with two is unusual and one with three is rare. **Demonstrated capability areas from Gate B are not strengths.** They set the layer-3 floor below, and that is the whole of their effect on the score.
+
+Crediting demonstrated capability twice — once as a floor, once as a multiplier — silently inflates layer 3, which is the layer a reader weighs most heavily. Pick the floor. It is a stated rule with a stated threshold; the multiplier route is invisible and compounds.
 >
 > `layer = 100 − (deductions × (1 − min(0.15 × strengths, 0.60)))`
 
@@ -88,6 +92,8 @@ Both are still reported first and marked urgent — the exposure is real at eith
 | 0 to 1 | none |
 
 The floor applies to layer 3 only — a parse failure or a recruiter-level filter can still stop a capable engineer, and the report must be able to say so.
+
+**Round to integers before choosing the stop layer, and break ties toward the earlier layer.** A resume stops at the *first* filter it fails, so when two layers score the same the earlier one is named. Without this, a third of a point decides which reader gets blamed.
 
 **Mistargeting never deducts.** Archetype or discipline mismatch is reported as aim, not quality, and takes no points off. A strong signoff engineer chasing design roles scores as the strong engineer they are, with the mismatch named beside the score. Scoring aim as weakness would reproduce the exact error this rubric was built to correct.
 
