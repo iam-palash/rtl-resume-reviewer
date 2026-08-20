@@ -163,9 +163,9 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
   .finding,.cta,.funnel,.scorecard,.urgent,.verdict-box,.caprow,.q,.slay{break-inside:avoid;}
   .section,.capmap,.qs,.score-layers{break-inside:auto;}
 
-  /* PAGE 1 — the summary: who wrote it, the score, what the page demonstrates */
-  .capmap{break-after:page;}
-  /* PAGE 2 — the urgent finding, the funnel and the verdict */
+  /* PAGE 1 — the cover: who wrote it, the score, and the three screens */
+  .capmap{break-before:page;}
+  /* PAGE 2 — what the page demonstrates, then the urgent finding and verdict */
   .verdict-box{break-after:page;}
   /* FINAL PAGE — the ask, never split from the guarantee under it */
   .cta{break-before:page;}
@@ -219,20 +219,6 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
     <div class="score-note">Your layers score <strong>REPLACE</strong> / <strong>REPLACE</strong> / <strong>REPLACE</strong>. The overall is the lowest of the three, not the average. The confidentiality finding below caps any resume at <strong>REPLACE</strong> until it is removed — without it, this page scores <strong>REPLACE</strong>. Clearing what is flagged below projects to <strong>REPLACE</strong>. <strong>Fix it and run this review again.</strong></div>
   </div>
 
-  <div class="capmap">
-    <h2>What this page demonstrates</h2>
-    <div class="lead">Assessed before anything else, and on evidence rather than keywords: an area counts as <strong>demonstrated</strong> only where an action, a specific artifact and an outcome all appear together.</div>
-    <div class="caprow"><div class="area">Power</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE — the evidence, in their words</div></div>
-    <div class="caprow"><div class="area">Performance</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
-    <div class="caprow"><div class="area">Area</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE — named, but no outcome attached</div></div>
-    <div class="caprow"><div class="area">Micro-architecture</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE — what a reader looked for and did not find</div></div>
-    <div class="caprow"><div class="area">Integration</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
-    <div class="caprow"><div class="area">Synthesis &amp; flow</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE</div></div>
-    <div class="caprow"><div class="area">Quality &amp; signoff</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
-    <div class="caprow"><div class="area">Bring-up &amp; debug</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE</div></div>
-    <div class="capnote">REPLACE — the count against the band's bar, stated plainly, then what the absent areas say about aim rather than ability.</div>
-  </div>
-
   <!-- FIXED COPY — DO NOT REWRITE. Explains the model, not the candidate. -->
   <p class="funnel-why">Every open role draws hundreds of applications. Three filters cut them down, and each one reads for something different.</p>
 
@@ -252,6 +238,20 @@ footer a,.byline a{color:var(--accent2);text-decoration:none;font-weight:600;}
       <div class="who">Hiring manager</div>
       <div class="verdict">✓ Would likely pass</div>
     </div>
+  </div>
+
+  <div class="capmap">
+    <h2>What this page demonstrates</h2>
+    <div class="lead">Assessed before anything else, and on evidence rather than keywords: an area counts as <strong>demonstrated</strong> only where an action, a specific artifact and an outcome all appear together.</div>
+    <div class="caprow"><div class="area">Power</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE — the evidence, in their words</div></div>
+    <div class="caprow"><div class="area">Performance</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Area</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE — named, but no outcome attached</div></div>
+    <div class="caprow"><div class="area">Micro-architecture</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE — what a reader looked for and did not find</div></div>
+    <div class="caprow"><div class="area">Integration</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Synthesis &amp; flow</div><div><span class="grip touch">Touched</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Quality &amp; signoff</div><div><span class="grip demo">Demonstrated</span></div><div class="ev">REPLACE</div></div>
+    <div class="caprow"><div class="area">Bring-up &amp; debug</div><div><span class="grip absent">Absent</span></div><div class="ev">REPLACE</div></div>
+    <div class="capnote">REPLACE — the count against the band's bar, stated plainly, then what the absent areas say about aim rather than ability.</div>
   </div>
 
   <!-- ============================================================
