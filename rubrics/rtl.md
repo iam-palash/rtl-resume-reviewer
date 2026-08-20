@@ -403,7 +403,7 @@ Two corollaries this exists to prevent, both observed as false positives:
 
 ### DOC-018 · Placement-cell template padding
 
-**Signature:** Sections carrying no hiring information — Declaration with place/signature, Personal Traits ("Adaptable", "Team Player"), Hobbies, Languages Known, Marital Status.
+**Signature:** Sections carrying no hiring information — Personal Traits ("Adaptable", "Team Player"), Hobbies, Languages Known, Marital Status. A Declaration block fires **DOC-031** instead, not this entry.
 **Reads as:** A college placement template never revised for industry. Self-asserted traits are unfalsifiable and therefore worthless, and the block consumes space that should carry technical depth.
 **Probe:** —
 **Weight:** `reject-contributing`
@@ -746,6 +746,16 @@ Common misreads: block-internal integration is not SoC integration; running qual
 **Layer:** 2
 
 ---
+
+### DOC-031 · Declaration block
+
+**Signature:** A declaration that the information is true, with or without a place line, date or signature.
+**Reads as:** **The declaration has already been made elsewhere.** Every application portal takes the same undertaking as a checkbox before submission, and any offer is conditional on the information being accurate whether or not the resume says so. On the page it certifies nothing a reader can act on, cannot be enforced, and is never read.
+It also dates the document precisely. The convention belongs to paper applications physically posted to an employer; it has had no function since applications went digital, so its presence says the template has not been revisited in over a decade.
+The cost is not the sentence. It is the two or three lines at the very end of the page — the last thing a reader sees — spent on a formality instead of the strongest thing the candidate has done.
+**Probe:** —
+**Weight:** `reject-contributing`
+**Layer:** 2
 
 ## Combination rules
 
