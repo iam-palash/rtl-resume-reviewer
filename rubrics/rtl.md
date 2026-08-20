@@ -101,6 +101,8 @@ The floor applies to layer 3 only — a parse failure or a recruiter-level filte
 
 Recompute the whole thing with every `reject`, `reject-contributing` and confidentiality finding resolved — leaving `probe` items in place, because a probe is a question to prepare for, not a defect to erase.
 
+**Verify before you claim.** Before telling the user a report is ready, confirm the file exists, is a plausible size, and actually opened. A report that renders unstyled or half-written is worse than none, and it is invisible unless checked.
+
 **Cap the projection at 85.** A rewrite that has not been written yet is not evidence, and a tool that promises 95 for an afternoon's editing is lying to keep someone happy. 85 is "gets calls" — the honest ceiling for fixes that are already listed and not yet done.
 
 Report both numbers together: **where they are now, and where the fixes in this report put them.** The gap is the point. A candidate at 34 who can reach 79 by fixing what is already listed will edit the document and run the review again, which is the only way this tool improves anything. Never report the current score alone — a bare number is a verdict, and a verdict is not actionable.

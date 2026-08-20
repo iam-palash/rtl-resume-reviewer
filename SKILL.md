@@ -147,8 +147,10 @@ The Signature line is the point of the whole exercise. Anyone can write plausibl
 
 | Condition | Variant |
 |---|---|
-| Layer 3 is **not** the stop layer **and** the layer-3 score is **70 or above** | **A** — the page already clears the technical reader |
+| Layer 3 is **not** the stop layer, the layer-3 score is **70 or above**, **and the overall score is 70 or above** | **A** — the page already clears the technical reader |
 | Anything else — stops at layer 1, layer 2, or a layer-3 score below 70 | **B** |
+
+The overall gate matters. Two calibration resumes scored 75+ at layer 3 while dying at the parser — Variant A would have told them *"the screen is not your problem"* when the screen was precisely their problem. A strong technical layer behind a broken first filter is a common shape, not an edge case.
 
 **Variant A** does not congratulate. It moves to the next real risk: where their preparation actually stands, the topic on the page they least want to be asked about, and how a panel probes the claims the resume made. It offers a mock interview, because the screen is no longer their problem.
 
