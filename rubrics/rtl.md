@@ -718,7 +718,7 @@ Common misreads: block-internal integration is not SoC integration; running qual
 
 ## Strengths — surface these, never flag them
 
-*Four of seven resumes in the calibration corpus buried their single strongest asset. The material was present and mis-weighted; in one case the same facts read as a defect until reframed. Report strengths at the top, above the flags — a defect list is what every commodity tool produces.*
+*Resumes routinely bury their single strongest asset. The material is present and mis-weighted, and the same facts can read as a defect until reframed. Report strengths at the top, above the flags — a defect list is what every commodity tool produces.*
 
 ### RTL-028 · Shipped silicon buried
 

@@ -30,7 +30,7 @@ Most tools only see layer 1. Most advice only addresses layer 3. The gap between
 
 You get a self-contained HTML report — open it, print to PDF, no install — with every finding quoted against your actual text, the probing question each one implies, and the strengths you are already carrying and under-using.
 
-**It also finds what you have buried.** In the calibration corpus, four of seven candidates had their single strongest asset already on the page and mis-weighted — shipped silicon below the fold, debug capability never named as debug, a career pivot showing only as overlapping dates. That is usually the most valuable output.
+**It also finds what you have buried.** Resumes routinely carry their strongest asset already on the page and mis-weighted — shipped silicon below the fold, debug capability never named as debug, a career pivot showing only as overlapping dates. That is usually the most valuable output.
 
 ---
 
@@ -72,13 +72,13 @@ The rubric lives in [`rubrics/rtl.md`](rubrics/rtl.md) as plain markdown. Each e
 
 **Adding a discipline.** Physical design, DV and DFT deserve their own rubrics, written by people who interview for those roles — not by an RTL engineer guessing. If that is you, open a PR with `rubrics/<discipline>.md` in the same format. That is the main thing this repo needs.
 
-**Disagreeing with an entry** is welcome, especially with a counter-example. The rubric was built inductively from a small corpus and is shaped by that; entries that turn out to be local rather than general should be cut.
+**Disagreeing with an entry** is welcome, especially with a counter-example. The rubric was built inductively from real resumes and is shaped by that; entries that turn out to be local rather than general should be cut.
 
 ---
 
 ## Limits, stated plainly
 
-Built from a small calibration corpus, so it is sharper on some failure modes than others. It has been validated against one real screening outcome, where it correctly predicted the layer at which the candidate was rejected — one matched prediction is a signal, not proof.
+Built inductively from real resumes, so it is sharper on some failure modes than others. Treat it as one engineer's judgment written down and made checkable, not as a validated instrument.
 
 It reviews a document. It cannot assess your engineering, and a resume it likes is not a job offer.
 
