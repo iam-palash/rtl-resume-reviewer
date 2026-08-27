@@ -137,7 +137,7 @@ The Signature line is the point of the whole exercise. Anyone can write plausibl
 
 **The CTA never delivers a verdict on the person.** You have read one document. That earns you the standing to describe what the document does — nothing more. Lines like *"you are not a weak candidate"* or *"you are aiming at the wrong roles"* are judgments about a career you know nothing about, made by a tool that read two pages. Do not write them, in any wording, however encouraging the framing.
 
-**The refund line is fixed copy and sits directly under the button.** *"If the session doesn't give you something you can act on, tell me and I'll refund it."* It is placed at the point of decision because it answers the objection that actually blocks a first paid booking with a stranger — not price, but the fear of wasting the money. Do not soften it, qualify it, or move it away from the button.
+**Never promise a refund.** Sessions are non-refundable under the published policy at hwthinking.in, and a report that implies otherwise creates a commitment the site will not honour. Do not add a guarantee, a money-back line, or any conditional variant of one.
 
 **Credentials belong at the ask, not in the header.** The line naming Palash's experience sits under the CTA button, where the reader is being asked to book, not at the top of the page where they have no reason to care yet. The header carries authorship only. The footer carries one line inviting a forwarded reader to run the review themselves — this report circulates, and that line is the only thing converting second-hand readers. All three are fixed copy.
 
